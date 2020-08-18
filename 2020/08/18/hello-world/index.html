@@ -5,20 +5,20 @@
   
 
   
-  <title>Hello World | Hexo</title>
+  <title>入坑博客咯ε=( o｀ω′)ノ | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="要不就随手记下入坑过程吧😁 首先呢，npm，git啥的你总该要装吧，记得换成淘宝源，要不然可能贼慢(虽然俺没试过(+_+))。  这里用的是hexo框架，所以就直接去官网找吧在随便一个文件夹中去，可以用git bash，也可以用win的cmd(这里提醒下：最好用管理员版（win+x就能看见)） 12345npm install hexo-cli -ghexo init blogcd blognp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="入坑博客咯ε&#x3D;( o｀ω′)ノ">
 <meta property="og:url" content="http://yoursite.com/2020/08/18/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="要不就随手记下入坑过程吧😁 首先呢，npm，git啥的你总该要装吧，记得换成淘宝源，要不然可能贼慢(虽然俺没试过(+_+))。  这里用的是hexo框架，所以就直接去官网找吧在随便一个文件夹中去，可以用git bash，也可以用win的cmd(这里提醒下：最好用管理员版（win+x就能看见)） 12345npm install hexo-cli -ghexo init blogcd blognp">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-18T14:02:28.924Z">
-<meta property="article:modified_time" content="2020-08-18T14:02:28.924Z">
+<meta property="article:modified_time" content="2020-08-18T15:01:11.264Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -67,7 +67,7 @@
       
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      入坑博客咯ε=( o｀ω′)ノ
     </h1>
   
 
@@ -90,19 +90,43 @@
     
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+        <h2 id="要不就随手记下入坑过程吧😁"><a href="#要不就随手记下入坑过程吧😁" class="headerlink" title="要不就随手记下入坑过程吧😁"></a>要不就随手记下入坑过程吧😁</h2><ol>
+<li><p>首先呢，npm，git啥的你总该要装吧，记得换成淘宝源，要不然可能贼慢(虽然俺没试过(+_+))。</p>
+</li>
+<li><p>这里用的是hexo框架，所以就直接去<a target="_blank" rel="noopener" href="https://hexo.io/">官网</a>找吧<br>在随便一个文件夹中去，可以用<code>git bash</code>，也可以用win的cmd(这里提醒下：最好用管理员版（win+x就能看见)）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+<p>有个坑有点烦的，在<code>hexo init blog</code>的时候会有对远程仓库的cloning，会很慢，之前一直卡在那儿一直以为是我这里代理问题，结果。。。。昂，对，我多等了一会儿就行了，之前使用<code>git bash</code>的结果好像有报错…..搞忘了， 算了( &amp; _ &amp; )你不在意的吧</p>
+</li>
+<li><p>再就是去github建一个仓库命名为<code>YourGithubName.github.io</code>， 比如我这个就叫<code>fireworkHy.github.io</code></p>
+</li>
+<li><p>再回来，去本地博客文件夹中找到<code>_config.yml</code>这个配置文件，翻到它的最下面：<br>找到deploy，这个是由hexo提供的一键部署的配置地方，加上这些：</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;fireworkHy&#x2F;fireworkHy.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+<p>默认是也会放在master分支上，但是最好显式配置下。</p>
+</li>
+<li><p>最后就是部署了, 回到命令行中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+<p>就没了，昂，就这样，别觉得太难哟，一步到位</p>
+</li>
+</ol>
+<blockquote>
+<p>测试之后发现访问太慢了，翻墙的话还好，如果图片多了，资源拥挤了，访问可能会很慢，虽然。。。我感觉开发的应该都翻墙的吧hhh，不会还有人不会翻墙吧，不会吧不会吧🧐</p>
+<p>所以准备在码云上部署博客，这两边都会更新的，码云的话，站点在国内，一定会很快😋</p>
+</blockquote>
+<h2 id="下面给出一些可能常用的hexo命令🎈"><a href="#下面给出一些可能常用的hexo命令🎈" class="headerlink" title="下面给出一些可能常用的hexo命令🎈"></a>下面给出一些可能常用的hexo命令🎈</h2><h3 id="建立新博文"><a href="#建立新博文" class="headerlink" title="建立新博文"></a>建立新博文</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>详情戳这儿👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="本地跑服务"><a href="#本地跑服务" class="headerlink" title="本地跑服务"></a>本地跑服务</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>戳这儿戳这儿👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>当然还是戳这儿咯🙃: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>不多1313👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -177,7 +201,7 @@ gitment.render('gitmentContainer')
       <ul>
         
           <li>
-            <a href="/2020/08/18/hello-world/">Hello World</a>
+            <a href="/2020/08/18/hello-world/">入坑博客咯ε=( o｀ω′)ノ</a>
           </li>
         
       </ul>
