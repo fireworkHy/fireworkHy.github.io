@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-     
+    vue 自定义组件v-model双向绑定和父子组件同步通信 |  
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -41,6 +41,9 @@
   <div id="app">
     
       
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
     <main class="content on">
       <section class="outer">
   <article
@@ -51,6 +54,15 @@
   data-scroll-reveal
 >
   <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  vue 自定义组件v-model双向绑定和父子组件同步通信
+</h1>
+ 
+
+    </header>
      
     <div class="article-meta">
       <a href="/2020/08/31/vue/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/" class="article-date">
@@ -85,8 +97,7 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>title: vue 自定义组件v-model双向绑定和父子组件同步通信</p>
-<h1 id="vue-自定义组件v-model双向绑定和父子组件同步通信"><a href="#vue-自定义组件v-model双向绑定和父子组件同步通信" class="headerlink" title="vue 自定义组件v-model双向绑定和父子组件同步通信"></a>vue 自定义组件v-model双向绑定和父子组件同步通信</h1><h2 id="原因嘛。。"><a href="#原因嘛。。" class="headerlink" title="原因嘛。。"></a>原因嘛。。</h2><p>就是看vue教程时候没看懂，我直接阿巴阿巴，<a href="%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)">这个</a></p>
+  <h1 id="vue-自定义组件v-model双向绑定和父子组件同步通信"><a href="#vue-自定义组件v-model双向绑定和父子组件同步通信" class="headerlink" title="vue 自定义组件v-model双向绑定和父子组件同步通信"></a>vue 自定义组件v-model双向绑定和父子组件同步通信</h1><h2 id="原因嘛。。"><a href="#原因嘛。。" class="headerlink" title="原因嘛。。"></a>原因嘛。。</h2><p>就是看vue教程时候没看懂，我直接阿巴阿巴，<a href="%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)">这个</a></p>
 <p>然后搜了下，转眼一看自己又像个憨批了🤣</p>
 <h2 id="简单介绍下"><a href="#简单介绍下" class="headerlink" title="简单介绍下"></a>简单介绍下</h2><p><code>v-model</code>指令通常用在与用户交互填写相关信息上，比如在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。</p>
 <p>本质上就是绑定prop的语法糖：绑定数据，而后触发事件，更新数据。</p>
@@ -120,12 +131,6 @@
 <p>ref： <a target="_blank" rel="noopener" href="http://www.dongxiaofeng.com/2019/02/18/vue-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6v-model%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%92%8C%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1/">http://www.dongxiaofeng.com/2019/02/18/vue-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6v-model%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%92%8C%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1/</a></p>
  
       <!-- reward -->
-      
-      <div id="reword-out">
-        <div id="reward-btn">
-          Donate
-        </div>
-      </div>
       
     </div>
     
@@ -263,7 +268,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2020
+        2020
         <i class="ri-heart-fill heart_icon"></i> FireworkHy
       </li>
     </ul>
@@ -336,22 +341,6 @@
       <a class="nav-item-link" href="/categories">分类</a>
     </li>
     
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
-    </li>
-    
   </ul>
 </nav>
 <nav class="navbar navbar-bottom">
@@ -362,10 +351,6 @@
         <i class="ri-search-line"></i>
       </a>
       
-      
-      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
       
     </li>
   </ul>
@@ -546,6 +531,30 @@
 
 <!-- MathJax -->
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
 <!-- Katex -->
 
 <!-- busuanzi  -->
@@ -559,6 +568,10 @@
 <!-- ClickBoom1 -->
 
 <!-- ClickBoom2 -->
+
+
+<script src="/js/clickBoom2.js"></script>
+
 
 <!-- CodeCopy -->
 
@@ -624,6 +637,27 @@
 <!-- CanvasBackground -->
 
 
+<script src="/js/dz.js"></script>
+
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
     
   </div>
 </body>
