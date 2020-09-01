@@ -47,6 +47,8 @@
     <url>/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/</url>
     <content><![CDATA[<h1 id="vue-自定义组件v-model双向绑定和父子组件同步通信"><a href="#vue-自定义组件v-model双向绑定和父子组件同步通信" class="headerlink" title="vue 自定义组件v-model双向绑定和父子组件同步通信"></a>vue 自定义组件v-model双向绑定和父子组件同步通信</h1><h2 id="原因嘛。。"><a href="#原因嘛。。" class="headerlink" title="原因嘛。。"></a>原因嘛。。</h2><p>就是看vue教程时候没看懂，我直接阿巴阿巴，<a href="%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)">这个</a></p>
 <p>然后搜了下，转眼一看自己又像个憨批了🤣</p>
+<a id="more"></a>
+
 <h2 id="简单介绍下"><a href="#简单介绍下" class="headerlink" title="简单介绍下"></a>简单介绍下</h2><p><code>v-model</code>指令通常用在与用户交互填写相关信息上，比如在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。</p>
 <p>本质上就是绑定prop的语法糖：绑定数据，而后触发事件，更新数据。</p>
 <blockquote>

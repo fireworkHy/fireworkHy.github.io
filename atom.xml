@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-01T03:31:32.217Z</updated>
+  <updated>2020-09-01T09:16:42.825Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,11 @@
     <link href="http://yoursite.com/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/"/>
     <id>http://yoursite.com/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/</id>
     <published>2020-08-31T12:52:16.966Z</published>
-    <updated>2020-09-01T03:31:32.217Z</updated>
+    <updated>2020-09-01T09:16:42.825Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;vue-自定义组件v-model双向绑定和父子组件同步通信&quot;&gt;&lt;a href=&quot;#vue-自定义组件v-model双向绑定和父子组件同步通信&quot; class=&quot;headerlink&quot; title=&quot;vue</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;vue-自定义组件v-model双向绑定和父子组件同步通信&quot;&gt;&lt;a href=&quot;#vue-自定义组件v-model双向绑定和父子组件同步通信&quot; class=&quot;headerlink&quot; title=&quot;vue 自定义组件v-model双向绑定和父子组件同步通信&quot;&gt;&lt;/a&gt;vue 自定义组件v-model双向绑定和父子组件同步通信&lt;/h1&gt;&lt;h2 id=&quot;原因嘛。。&quot;&gt;&lt;a href=&quot;#原因嘛。。&quot; class=&quot;headerlink&quot; title=&quot;原因嘛。。&quot;&gt;&lt;/a&gt;原因嘛。。&lt;/h2&gt;&lt;p&gt;就是看vue教程时候没看懂，我直接阿巴阿巴，&lt;a href=&quot;%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)&quot;&gt;这个&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后搜了下，转眼一看自己又像个憨批了🤣&lt;/p&gt;</summary>
     
     
     
