@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>入坑博客咯ε=( o｀ω′)ノ</title>
+    <url>/2020/08/18/hello-world/</url>
+    <content><![CDATA[<h2 id="要不就随手记下入坑过程吧😁"><a href="#要不就随手记下入坑过程吧😁" class="headerlink" title="要不就随手记下入坑过程吧😁"></a>要不就随手记下入坑过程吧😁</h2><ol>
+<li><p>首先呢，npm，git啥的你总该要装吧，记得换成淘宝源，要不然可能贼慢(虽然俺没试过(+_+))。</p>
+</li>
+<li><p>这里用的是hexo框架，所以就直接去<a href="https://hexo.io/">官网</a>找吧<br>在随便一个文件夹中去，可以用<code>git bash</code>，也可以用win的cmd(这里提醒下：最好用管理员版（win+x就能看见)）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>有个坑有点烦的，在<code>hexo init blog</code>的时候会有对远程仓库的cloning，会很慢，之前一直卡在那儿一直以为是我这里代理问题，结果。。。。昂，对，我多等了一会儿就行了，之前使用<code>git bash</code>的结果好像有报错…..搞忘了， 算了( &amp; _ &amp; )你不在意的吧</p>
+</li>
+<li><p>再就是去github建一个仓库命名为<code>YourGithubName.github.io</code>， 比如我这个就叫<code>fireworkHy.github.io</code></p>
+</li>
+<li><p>再回来，去本地博客文件夹中找到<code>_config.yml</code>这个配置文件，翻到它的最下面：<br>找到deploy，这个是由hexo提供的一键部署的配置地方，加上这些：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;fireworkHy&#x2F;fireworkHy.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>默认是也会放在master分支上，但是最好显式配置下。</p>
+</li>
+<li><p>最后就是部署了, 回到命令行中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>就没了，昂，就这样，别觉得太难哟，一步到位</p>
+</li>
+</ol>
+<blockquote>
+<p>测试之后发现访问太慢了，翻墙的话还好，如果图片多了，资源拥挤了，访问可能会很慢，虽然。。。我感觉开发的应该都翻墙的吧hhh，不会还有人不会翻墙吧，不会吧不会吧🧐</p>
+<p>所以准备在码云上部署博客，这两边都会更新的，码云的话，站点在国内，一定会很快😋</p>
+</blockquote>
+<h2 id="下面给出一些可能常用的hexo命令🎈"><a href="#下面给出一些可能常用的hexo命令🎈" class="headerlink" title="下面给出一些可能常用的hexo命令🎈"></a>下面给出一些可能常用的hexo命令🎈</h2><h3 id="建立新博文"><a href="#建立新博文" class="headerlink" title="建立新博文"></a>建立新博文</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>详情戳这儿👉: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="本地跑服务"><a href="#本地跑服务" class="headerlink" title="本地跑服务"></a>本地跑服务</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>戳这儿戳这儿👉: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>当然还是戳这儿咯🙃: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>不多1313👉: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>vue 自定义组件v-model双向绑定和父子组件同步通信</title>
+    <url>/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/</url>
+    <content><![CDATA[<h1 id="vue-自定义组件v-model双向绑定和父子组件同步通信"><a href="#vue-自定义组件v-model双向绑定和父子组件同步通信" class="headerlink" title="vue 自定义组件v-model双向绑定和父子组件同步通信"></a>vue 自定义组件v-model双向绑定和父子组件同步通信</h1><h2 id="原因嘛。。"><a href="#原因嘛。。" class="headerlink" title="原因嘛。。"></a>原因嘛。。</h2><p>就是看vue教程时候没看懂，我直接阿巴阿巴，<a href="%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)">这个</a></p>
+<p>然后搜了下，转眼一看自己又像个憨批了🤣</p>
+<h2 id="简单介绍下"><a href="#简单介绍下" class="headerlink" title="简单介绍下"></a>简单介绍下</h2><p><code>v-model</code>指令通常用在与用户交互填写相关信息上，比如在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。</p>
+<p>本质上就是绑定prop的语法糖：绑定数据，而后触发事件，更新数据。</p>
+<blockquote>
+<p>为什么会有自定义model这样的操作呢，是因为，<code>v-model</code>在默认的情况下，绑定的prop是value，触发的事件是input，具体来讲就是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; v-model</span><br><span class="line">&lt;custom-input v-model&#x3D;&quot;test&quot;&gt;&lt;&#x2F;custom-input&gt;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 本质上</span><br><span class="line">&lt;custom-input :value&#x3D;&quot;test&quot; @input&#x3D;&quot;value &#x3D;&gt; test &#x3D; value&quot;&gt;&lt;custom-input&gt;</span><br></pre></td></tr></table></figure>
+
+<p>所以嘞，一个自定义的<code>v-model</code>组件中就是自定义接受的数据是啥，自定义触发的事件是啥。</p>
+</blockquote>
+<p>vue原文：</p>
+<blockquote>
+<p><a href="https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model">自定义组件的 <code>v-model</code></a></p>
+<p>​    2.2.0+ 新增</p>
+<p>一个组件上的 <code>v-model</code> 默认会利用名为 <code>value</code> 的 prop 和名为 <code>input</code> 的事件，但是像单选框、复选框等类型的输入控件可能会将 <code>value</code> attribute 用于<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Value">不同的目的</a>。</p>
+</blockquote>
+<h2 id="来了来了，实操讲解了（v-model通信）"><a href="#来了来了，实操讲解了（v-model通信）" class="headerlink" title="来了来了，实操讲解了（v-model通信）"></a>来了来了，实操讲解了（<code>v-model</code>通信）</h2><h3 id="写法一（推荐）"><a href="#写法一（推荐）" class="headerlink" title="写法一（推荐）"></a>写法一（推荐）</h3><p>这里就解释下vue官方教程中的例子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 自定义的v-model组件</span><br><span class="line">Vue.component(&#39;base-checkbox&#39;, &#123;</span><br><span class="line">  model: &#123;</span><br><span class="line">    prop: &#39;checked&#39;, &#x2F;&#x2F; 这个prop： checked，就是自定义的prop。是在该组件被调用时用v-model获取到的值，即下面调用该组件时用v-model传入的lovingvue, 可以这样理解，该组件将外面v-model传入的值用checked这个prop来接收。</span><br><span class="line">    event: &#39;change&#39;  &#x2F;&#x2F; 这个event： change，就是自定义的触发事件。触发该事件时，更新的值就会自动更新给v-model绑定的值。用下面使用的实例来说，就是，在子组件base-checkbox触发自身的change事件时，这时会执行$emit(&#39;change&#39;, $event.target.checked)， 那么就是说触发了父组件的change事件，此时携带的参数， $event.target.checked会自动赋值给v-model所绑定的lovingvue这个变量，实现数据更新。</span><br><span class="line">  &#125;,</span><br><span class="line">  props: &#123;</span><br><span class="line">    checked: Boolean &#x2F;&#x2F; 上面的model对象是对v-model的自定义，但是仍然需要在props中声明 checked 这个 prop。</span><br><span class="line">  &#125;,</span><br><span class="line">  template: &#96;</span><br><span class="line">    &lt;input</span><br><span class="line">      type&#x3D;&quot;checkbox&quot;</span><br><span class="line">      v-bind:checked&#x3D;&quot;checked&quot; &#x2F;&#x2F; 将prop: checked绑定到 input标签上的attr: checked上</span><br><span class="line">      v-on:change&#x3D;&quot;$emit(&#39;change&#39;, $event.target.checked)&quot; &#x2F;&#x2F; change事件触发时，触发父组件自定义的change事件，并传入更新后的值</span><br><span class="line">    &gt;</span><br><span class="line">  &#96;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 使用自定义组件时</span><br><span class="line">&lt;base-checkbox v-model&#x3D;&quot;lovingVue&quot;&gt;&lt;&#x2F;base-checkbox&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这个例子中可能各种prop与attr名称一样，看的有点迷糊，我下面就改一下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 自定义的v-model组件</span><br><span class="line">Vue.component(&#39;base-checkbox&#39;, &#123;</span><br><span class="line">  model: &#123;</span><br><span class="line">    prop: &#39;propChecked&#39;, &#x2F;&#x2F; 自定义的prop</span><br><span class="line">    event: &#39;emit-change-event&#39; &#x2F;&#x2F; 自定义的v-model绑定触发事件</span><br><span class="line">  &#125;,</span><br><span class="line">  props: &#123;</span><br><span class="line">    propChecked: Boolean &#x2F;&#x2F; 仍需要声明接受的prop</span><br><span class="line">  &#125;,</span><br><span class="line">  template: &#96;</span><br><span class="line">    &lt;input</span><br><span class="line">      type&#x3D;&quot;checkbox&quot;</span><br><span class="line">      v-bind:checked&#x3D;&quot;propChecked&quot;</span><br><span class="line">      v-on:change&#x3D;&quot;$emit(&#39;emit-change-event&#39;, $event.target.checked)&quot; &#x2F;&#x2F; 这里触发父组件的v-model绑定的事件</span><br><span class="line">    &gt;</span><br><span class="line">  &#96;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 使用自定义组件时</span><br><span class="line">&lt;base-checkbox v-model&#x3D;&quot;lovingVue&quot;&gt;&lt;&#x2F;base-checkbox&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="写法二"><a href="#写法二" class="headerlink" title="写法二"></a>写法二</h3><p>之前提到<code>v-model</code>默认绑定的prop是value，默认绑定的触发事件是input。</p>
+<p>所以写法二也就很明了咯。</p>
+<p>这里正好可以对比下，就改写上面vue官方的例子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 自定义的v-model组件</span><br><span class="line">Vue.component(&#39;base-checkbox&#39;, &#123;</span><br><span class="line">  props: &#123;</span><br><span class="line">    value: &#123; &#x2F;&#x2F; 这里显式地用默认的propvalue来接收</span><br><span class="line">        default: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  template: &#96;</span><br><span class="line">    &lt;input</span><br><span class="line">      type&#x3D;&quot;checkbox&quot;</span><br><span class="line">      v-bind:checked&#x3D;&quot;value&quot;</span><br><span class="line">      v-on:change&#x3D;&quot;$emit(&#39;input&#39;, $event.target.checked)&quot; &#x2F;&#x2F; 这里触发默认绑定事件input</span><br><span class="line">    &gt;</span><br><span class="line">  &#96;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 使用自定义组件时</span><br><span class="line">&lt;base-checkbox v-model&#x3D;&quot;lovingVue&quot;&gt;&lt;&#x2F;base-checkbox&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>建议使用写法一，不然怎么叫自定义嘛，对吧😁</p>
+<p>以上便是小生对此一拙见。</p>
+<p>ref： <a href="http://www.dongxiaofeng.com/2019/02/18/vue-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6v-model%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%92%8C%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1/">http://www.dongxiaofeng.com/2019/02/18/vue-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6v-model%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%92%8C%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1/</a></p>
+]]></content>
+  </entry>
+</search>
