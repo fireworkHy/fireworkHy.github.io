@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-02T14:17:18.948Z</updated>
+  <updated>2020-09-22T15:42:55.507Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称</title>
+    <link href="http://yoursite.com/2020/09/22/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/09/22/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/</id>
+    <published>2020-09-22T15:36:50.966Z</published>
+    <updated>2020-09-22T15:42:55.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;配置安装vue-cli后，创建项目时遇上的问题。各种奇技淫巧都没用，最后在网上找着，记录一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;状况&quot;&gt;&lt;a href=&quot;#状况&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>vue 自定义组件v-model双向绑定和父子组件同步通信</title>

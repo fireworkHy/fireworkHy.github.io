@@ -43,6 +43,25 @@
 ]]></content>
   </entry>
   <entry>
+    <title>无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称</title>
+    <url>/2020/09/22/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>配置安装vue-cli后，创建项目时遇上的问题。各种奇技淫巧都没用，最后在网上找着，记录一下。</p>
+</blockquote>
+<h2 id="状况"><a href="#状况" class="headerlink" title="状况"></a>状况</h2><p>如果在使用 vue 命令的时候提示：</p>
+<blockquote>
+<p>vue : 无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。</p>
+</blockquote>
+<p>或者</p>
+<blockquote>
+<p>vue不是内部或外部命令…</p>
+</blockquote>
+<p>表示系统没有找到 vue.cmd 的地址，需要将地址加入到环境变量。</p>
+<p>是的，接下来解决方案就是将它所属目录添加到环境变量中</p>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>搜索vue.cmd，跳到它的目录中，复制它的目录路径，将其添加到环境变量中。</p>
+<h2 id="OK-白白😋"><a href="#OK-白白😋" class="headerlink" title="OK~      白白😋"></a>OK~      白白😋</h2>]]></content>
+  </entry>
+  <entry>
     <title>vue 自定义组件v-model双向绑定和父子组件同步通信</title>
     <url>/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/</url>
     <content><![CDATA[<h1 id="vue-自定义组件v-model双向绑定和父子组件同步通信"><a href="#vue-自定义组件v-model双向绑定和父子组件同步通信" class="headerlink" title="vue 自定义组件v-model双向绑定和父子组件同步通信"></a>vue 自定义组件v-model双向绑定和父子组件同步通信</h1><h2 id="原因嘛。。"><a href="#原因嘛。。" class="headerlink" title="原因嘛。。"></a>原因嘛。。</h2><p>就是看vue教程时候没看懂，我直接阿巴阿巴，<a href="%5Bhttps://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model%5D(https://cn.vuejs.org/v2/guide/components-custom-events.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6%E7%9A%84-v-model)">这个</a></p>
