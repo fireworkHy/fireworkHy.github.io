@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称 |  
+    入坑博客咯ε=( o｀ω′)ノ |  
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -58,7 +58,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-vue无效指令"
+  id="post-hello-world"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -69,22 +69,22 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称
+  入坑博客咯ε=( o｀ω′)ノ
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/09/22/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/" class="article-date">
-  <time datetime="2020-09-22T15:36:50.966Z" itemprop="datePublished">2020-09-22</time>
+      <a href="/2020/10/17/hello-world/" class="article-date">
+  <time datetime="2020-10-17T11:09:18.000Z" itemprop="datePublished">2020-10-17</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">200</span>
+            <span class="post-count">529</span>
         </span>
     </span>
 
@@ -93,7 +93,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -108,21 +108,44 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <blockquote>
-<p>配置安装vue-cli后，创建项目时遇上的问题。各种奇技淫巧都没用，最后在网上找着，记录一下。</p>
-</blockquote>
-<h2 id="状况"><a href="#状况" class="headerlink" title="状况"></a>状况</h2><p>如果在使用 vue 命令的时候提示：</p>
+  <h2 id="要不就随手记下入坑过程吧😁"><a href="#要不就随手记下入坑过程吧😁" class="headerlink" title="要不就随手记下入坑过程吧😁"></a>要不就随手记下入坑过程吧😁</h2><ol>
+<li><p>首先呢，npm，git啥的你总该要装吧，记得换成淘宝源，要不然可能贼慢(虽然俺没试过(+_+))。</p>
+</li>
+<li><p>这里用的是hexo框架，所以就直接去<a target="_blank" rel="noopener" href="https://hexo.io/">官网</a>找吧<br>在随便一个文件夹中去，可以用<code>git bash</code>，也可以用win的cmd(这里提醒下：最好用管理员版（win+x就能看见)）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>有个坑有点烦的，在<code>hexo init blog</code>的时候会有对远程仓库的cloning，会很慢，之前一直卡在那儿一直以为是我这里代理问题，结果。。。。昂，对，我多等了一会儿就行了，之前使用<code>git bash</code>的结果好像有报错…..搞忘了， 算了( &amp; _ &amp; )你不在意的吧</p>
+</li>
+<li><p>再就是去github建一个仓库命名为<code>YourGithubName.github.io</code>， 比如我这个就叫<code>fireworkHy.github.io</code></p>
+</li>
+<li><p>再回来，去本地博客文件夹中找到<code>_config.yml</code>这个配置文件，翻到它的最下面：<br>找到deploy，这个是由hexo提供的一键部署的配置地方，加上这些：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;fireworkHy&#x2F;fireworkHy.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>默认是也会放在master分支上，但是最好显式配置下。</p>
+</li>
+<li><p>最后就是部署了, 回到命令行中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>就没了，昂，就这样，别觉得太难哟，一步到位</p>
+</li>
+</ol>
 <blockquote>
-<p>vue : 无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。</p>
+<p>测试之后发现访问太慢了，翻墙的话还好，如果图片多了，资源拥挤了，访问可能会很慢，虽然。。。我感觉开发的应该都翻墙的吧hhh，不会还有人不会翻墙吧，不会吧不会吧🧐</p>
+<p>所以准备在码云上部署博客，这两边都会更新的，码云的话，站点在国内，一定会很快😋</p>
 </blockquote>
-<p>或者</p>
-<blockquote>
-<p>vue不是内部或外部命令…</p>
-</blockquote>
-<p>表示系统没有找到 vue.cmd 的地址，需要将地址加入到环境变量。</p>
-<p>是的，接下来解决方案就是将它所属目录添加到环境变量中</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>搜索vue.cmd，跳到它的目录中，复制它的目录路径，将其添加到环境变量中。</p>
-<h2 id="OK-白白😋"><a href="#OK-白白😋" class="headerlink" title="OK~      白白😋"></a>OK~      白白😋</h2> 
+<h2 id="下面给出一些可能常用的hexo命令🎈"><a href="#下面给出一些可能常用的hexo命令🎈" class="headerlink" title="下面给出一些可能常用的hexo命令🎈"></a>下面给出一些可能常用的hexo命令🎈</h2><h3 id="建立新博文"><a href="#建立新博文" class="headerlink" title="建立新博文"></a>建立新博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>详情戳这儿👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="本地跑服务"><a href="#本地跑服务" class="headerlink" title="本地跑服务"></a>本地跑服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>戳这儿戳这儿👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>当然还是戳这儿咯🙃: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>不多1313👉: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+ 
       <!-- reward -->
       
     </div>
@@ -184,7 +207,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/09/22/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/10/17/hello-world/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -195,10 +218,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
+      <a href="/2020/10/28/%E9%87%8D%E6%8B%BEJS(%E4%B8%80)/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            重拾JS(一)--浅谈new和this
+          
+        </div>
+      </a>
     
-      <a href="/2020/08/31/%E8%87%AA%E5%AE%9A%E4%B9%89v-model/" class="article-nav-link">
+    
+      <a href="/2020/10/17/vue%E6%97%A0%E6%95%88%E6%8C%87%E4%BB%A4/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">vue 自定义组件v-model双向绑定和父子组件同步通信</div>
+        <div class="article-nav-title">无法将“vue”项识别为 cmdlet、函数、脚本文件或可运行程序的名称</div>
       </a>
     
   </nav>
